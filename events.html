@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>    
+        .f ul,.t ul,.menu ul{
+            margin:0;
+            padding:0;
+            
+        }
+         .f ul,.t ul,.menu ul {
+            display:flex;
+            list-style-type: none;
+            gap:20px;
+            background-color: rgb(165, 165, 165);
+            padding:15px;
+        }
+        .f,.t {
+            display:none;
+            position:absolute;
+            z-index:1;
+        
+        }
+        a {
+           text-decoration: none;
+           color:black;
+           padding:20px;
+           font-weight:bold;
+        }
+        .f ul,.t ul {
+            text-decoration: none;
+           padding: 10px;
+           margin: 15px;
+           color:black;
+           font-weight: bold;
+           display:block;
+        }
+        .active a,.f ul li a:hover,.t ul li a:hover,.menu ul li a:hover{
+            background-color: rgb(68, 68, 68);
+            color:aliceblue; 
+            transition: 0.25s;   
+        }    
+        .fli:hover .f,.tt:hover .t {
+            display:block;
+        }
+        .f ul li,.t ul li{
+            margin: 15px;
+        }
+        .f a,.t a{
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr><img src="./logo_img1.jpg" width="1200px"></tr>
+        <div class="width-100 top-header">
+            <div class="container">
+                <div class="width-100">
+                    <b class="news-list"> NEWS :</b>
+                    <marquee class="headquote">MY SCHOOL: Daniel memorial E.M.High school is a symbol of intelligence and atticate</marquee>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href='./homepage.html'>HOME</a></li>
+                <li class="fli"><a href='#'>FACILITIES</a>
+                <div class="f">
+                    <ul>
+                        <li><a href='./labs_fac.html'>LABS</a></li>
+                        <li><a href='./library_fac.html'>LIBRARY</a></li>
+                        <li><a href='./sports_fac.html'>SPORTS</a></li>
+                        <li><a href='./bus_fac.html'>BUS FACILITY</a></li>
+                        <li><a href='./hostels.html'>HOSTELS</a></li>
+                    </ul> 
+                </div></li>
+                <li class="tt"><a href='#'>TIME-TABLE</a>
+                   <div class="t">
+                    <ul>
+                        <li><a href='./timetable_classes.html'>CLASSES</a></li>
+                        <li><a href='./timetable_teachers.html'>TEACHERS</a></li>
+                    </ul>                                           
+                   </div>
+                </li>
+                <li><a href='./fee_structure.html'>FEE STRUCTURE</a></li>
+                <li class="active"><a href='./events.html'>EVENTS</a></li>
+                <li><a href='./teachers_info.html'>TEACHERS INFO</a></li>
+                <li><a href='./contact_us.html'>CONTACT US</a></li>
+            </ul>
+            </div>
+    <h1><u>EVENTS HELD IN DANIEL MEMORIAL E.M.HIGH SCHOOL</u></h1>
+    <p>There are many events and celebrations that are being conducted every academic year in Daniel Memorial E.M.High school. Conducting events and celebrating festivals i.e any other special days makes students of the school to participate in different activities like organising the event,participating in competitions,moreover it makes children enthusiastic and happy. The speeches which are delivered by teachers not only inspires students but also gives them a lot of knowledge. The following are some of the images of events and celebrations that were held in the past academic years.</p>
+    <br><p>
+    On every year Independence day,many events are held. Activities like flag hoisting, remembering our great national leaders, chocolates distribution to students, prize distribution to students,conducting games, teachers delivering inspiring speeches etc.
+    <br><b>These are the images of the celebrations held on Independence day.</b> </p>
+    <img src="events9_img.jpeg" height="500px" width="300px" style="padding-right: 150px;padding-bottom: 30px;">
+    <img src="events10_img.jpeg" height="500px" width="700px" style="padding-bottom: 30px;">
+    <img src="events12_img.jpeg" height="500px"width="300px" style="padding-right: 150px;">
+    <img src="events11_img.jpeg" height="500px"width="700px">
+    <p>On every year gradution day,dance performances are given by students of the school. many prizes are distributed to students on their excellence in academics and sports too. Gifts are given to teachers for their hardwork. This event is celebrated like a festival in the school.<br>
+    <b>The following are the photos of annual day event.</b></p>
+    <img src="events3_img.jpeg" height="300px" width="400px" style="padding-right: 150px;padding-bottom: 30px;">
+    <img src="events4._img.jpeg" height="300px" width="400px" style="padding-bottom: 30px;">
+    <img src="events5.img.jpeg" height="300px" width="400px" style="padding-right: 150px;">
+    <img src="events6.img.jpeg" height="300px" width="400px">
+    <p>Along with graduation day,farewell event is also conducted every year where a warm send-off is given to 10th class students. Speeches are given by teachers about the path to be chosen in life to students. Students too share their experiences and students host the event in a great way.<br><b>These are the images of farewell event that took place in previous yeara.</b></p>
+    <img src="events1_img.jpeg" height="300px" width="450px" style="padding-right: 100px;">
+    <img src="events2_img.jpeg" height="300px" width="450px">
+    <p>Very useful activities like planting trees, awareness programs about health by holding placards by students is done here. These activities teaches students many values of life.<br><b>The following are the images of these activities.</b></p>
+    <img src="events13_img.jpeg" height="300px" width="450px" style="padding-right: 100px;">
+    <img src="events14_img.jpeg" height="300px" width="450px">
+    <p>Every year fancy dress competition also conducted. This increases students creativity and knowledge in them about different varieties of dressing.<br><b>The following are the images of fsncy dress competition.</b></p>
+    <img src="events7_img.jpeg" height="400px" width="300px" style="padding-right: 100px;">
+    <img src="events8_img.jpeg" height="400px" width="700px">
+</body>
+</html>

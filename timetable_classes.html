@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>    
+        .f ul,.t ul,.menu ul{
+            margin:0;
+            padding:0;
+            
+        }
+         .f ul,.t ul,.menu ul {
+            display:flex;
+            list-style-type: none;
+            gap:20px;
+            background-color: rgb(165, 165, 165);
+            padding:15px;
+        }
+        .f,.t {
+            display:none;
+            position:absolute;
+            z-index:1;
+        
+        }
+        a {
+           text-decoration: none;
+           color:black;
+           padding:20px;
+           font-weight:bold;
+        }
+        .f ul,.t ul {
+            text-decoration: none;
+           padding: 10px;
+           margin: 15px;
+           color:black;
+           font-weight: bold;
+           display:block;
+        }
+        .active a,.f ul li a:hover,.t ul li a:hover,.menu ul li a:hover{
+            background-color: rgb(68, 68, 68);
+            color:aliceblue; 
+            transition: 0.25s;   
+        }    
+        .fli:hover .f,.tt:hover .t {
+            display:block;
+        }
+        .f ul li,.t ul li{
+            margin: 15px;
+        }
+        .f a,.t a{
+            padding:10px;
+        }
+        table,th,td{
+          border:1px solid black;
+          }
+          td{
+            text-align: center;
+          }
+          th{
+            background-color: rgb(123, 202, 226);
+          }
+    </style>
+</head>
+<body>
+    <table>
+        <tr><img src="./logo_img1.jpg" width="1200px"></tr>
+        <div class="width-100 top-header">
+            <div class="container">
+                <div class="width-100">
+                    <b class="news-list"> NEWS :</b>
+                    <marquee class="headquote">MY SCHOOL: Daniel memorial E.M.High school is a symbol of intelligence and atticate</marquee>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href='./homepage.html'>HOME</a></li>
+                <li class="fli"><a href='#'>FACILITIES</a>
+                <div class="f">
+                    <ul>
+                        <li><a href='./labs_fac.html'>LABS</a></li>
+                        <li><a href='./library_fac.html'>LIBRARY</a></li>
+                        <li><a href='./sports_fac.html'>SPORTS</a></li>
+                        <li><a href='./bus_fac.html'>BUS FACILITY</a></li>
+                        <li><a href='./hostels.html'>HOSTELS</a></li>
+                    </ul> 
+                </div></li>
+                <li class="tt"><a href='#'>TIME-TABLE</a>
+                   <div class="t">
+                    <ul>
+                        <li class="active"><a href='./timetable_classes.html'>CLASSES</a></li>
+                        <li><a href='./timetable_teachers.html'>TEACHERS</a></li>
+                    </ul>                                           
+                   </div>
+                </li>
+                <li><a href='./fee_structure.html'>FEE STRUCTURE</a></li>
+                <li><a href='./events.html'>EVENTS</a></li>
+                <li><a href='./teachers_info.html'>TEACHERS INFO</a></li>
+                <li><a href='./contact_us.html'>CONTACT US</a></li>
+            </ul>
+            </div>
+    <h1><u>TIME-TABLE OF EACH CLASS</u></h1>
+    <h2><u>CLASS 6:</u></h2>
+    <table style="width:70%">
+        <tr>
+            <th>day</th>
+            <th>9a.m.-10a.m.</th>
+            <th>10a.m.-11a.m.</th>
+            <th>11a.m.-12p.m.</th>
+            <th>1p.m.-2p.m.</th>
+            <th>2p.m.-3p.m.</th>
+            <th>3p.m.-4p.m.</th>
+            <th>4p.m.-5p.m.</th>
+        </tr>
+        <tr>
+            <th>monday</th>
+            <td>telugu</td>
+            <td>hindi</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>physics</td>
+        </tr>
+        <tr>
+            <th>tuesday</th>
+            <td>social</td>
+            <td>english</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>physics</td>
+        </tr>
+        <tr>
+            <th>wednesday</th>
+            <td>science</td>
+            <td>hindi</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>maths</td>
+            <td>physics</td>
+        </tr>
+        <tr>
+            <th>thursday</th>
+            <td>telugu</td>
+            <td>physics</td>
+            <td>english</td>
+            <td>science</td>
+            <td>science</td>
+            <td>social</td>
+            <td>physics</td>
+        </tr>
+        <tr>
+            <th>friday</th>
+            <td>telugu</td>
+            <td>hindi</td>
+            <td>maths</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>hindi</td>
+        </tr>
+        <tr>
+            <th>saturday</th>
+            <td>physics</td>
+            <td>science</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>telugu</td>
+        </tr>
+    </table>
+    <br />
+    <hr />
+    <h2><u>CLASS 7:</u></h2>
+    <table style="width:70%">
+        <tr>
+            <th>day</th>
+            <th>9a.m.-10a.m.</th>
+            <th>10a.m.-11a.m.</th>
+            <th>11a.m.-12p.m.</th>
+            <th>1p.m.-2p.m.</th>
+            <th>2p.m.-3p.m.</th>
+            <th>3p.m.-4p.m.</th>
+            <th>4p.m.-5p.m.</th>
+        </tr>
+        <tr>
+            <th>monday</th>
+            <td>social</td>
+            <td>english</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>physics</td>
+        </tr>
+        <tr>
+            <th>tuesday</th>
+            <td>physics</td>
+            <td>science</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>telugu</td>
+        </tr>
+        <tr>
+            <th>wednesday</th>
+            <td>telugu</td>
+            <td>hindi</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>physics</td>
+        </tr>
+        <tr>
+            <th>thursday</th>
+            <td>telugu</td>
+            <td>hindi</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>physics</td>
+        </tr>
+        <tr>
+            <th>friday</th>
+            <td>physics</td>
+            <td>science</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>telugu</td>
+        </tr>
+        <tr>
+            <th>saturday</th>
+            <td>telugu</td>
+            <td>hindi</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>physics</td>
+        </tr>
+    </table>
+    <br />
+    <hr />
+    <h2><u>CLASS 8:</u></h2>
+    <table style="width:70%">
+        <tr>
+            <th>day</th>
+            <th>9a.m.-10a.m.</th>
+            <th>10a.m.-11a.m.</th>
+            <th>11a.m.-12p.m.</th>
+            <th>1p.m.-2p.m.</th>
+            <th>2p.m.-3p.m.</th>
+            <th>3p.m.-4p.m.</th>
+            <th>4p.m.-5p.m.</th>
+        </tr>
+        <tr>
+            <th>monday</th>
+            <td>telugu</td>
+            <td>hindi</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>physics</td>
+        </tr>
+        <tr>
+            <th>tuesday</th>
+            <td>telugu</td>
+            <td>hindi</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>physics</td>
+        </tr>
+        <tr>
+            <th>wednesday</th>
+            <td>physics</td>
+            <td>science</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>telugu</td>
+        </tr>
+        <tr>
+            <th>thursday</th>
+            <td>telugu</td>
+            <td>hindi</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>physics</td>
+        </tr>
+        <tr>
+            <th>friday</th>
+            <td>telugu</td>
+            <td>hindi</td>
+            <td>maths</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>hindi</td>
+        </tr>
+        <tr>
+            <th>saturday</th>
+            <td>telugu</td>
+            <td>hindi</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>physics</td>
+        </tr>
+    </table>
+    <br />
+    <hr />
+    <h2><u>CLASS 9:</u></h2>
+    <table style="width:70%">
+        <tr>
+            <th>day</th>
+            <th>9a.m.-10a.m.</th>
+            <th>10a.m.-11a.m.</th>
+            <th>11a.m.-12p.m.</th>
+            <th>1p.m.-2p.m.</th>
+            <th>2p.m.-3p.m.</th>
+            <th>3p.m.-4p.m.</th>
+            <th>4p.m.-5p.m.</th>
+        </tr>
+        <tr>
+            <th>monday</th>
+            <td>physics</td>
+            <td>science</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>telugu</td>
+        </tr>
+        <tr>
+            <th>tuesday</th>
+            <td>telugu</td>
+            <td>hindi</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>physics</td>
+        </tr>
+        <tr>
+            <th>wednesday</th>
+            <td>telugu</td>
+            <td>hindi</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>physics</td>
+        </tr>
+        <tr>
+            <th>thursday</th>
+            <td>telugu</td>
+            <td>hindi</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>physics</td>
+        </tr>
+        <tr>
+            <th>friday</th>
+            <td>telugu</td>
+            <td>hindi</td>
+            <td>maths</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>hindi</td>
+        </tr>
+        <tr>
+            <th>saturday</th>
+            <td>telugu</td>
+            <td>hindi</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>physics</td>
+        </tr>
+    </table>
+    <br />
+    <hr />
+    <h2><u>CLASS 10:</u></h2>
+    <table style="width:70%">
+        <tr>
+            <th>day</th>
+            <th>9a.m.-10a.m.</th>
+            <th>10a.m.-11a.m.</th>
+            <th>11a.m.-12p.m.</th>
+            <th>1p.m.-2p.m.</th>
+            <th>2p.m.-3p.m.</th>
+            <th>3p.m.-4p.m.</th>
+            <th>4p.m.-5p.m.</th>
+        </tr>
+        <tr>
+            <th>monday</th>
+            <td>telugu</td>
+            <td>hindi</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>physics</td>
+        </tr>
+        <tr>
+            <th>tuesday</th>
+            <td>telugu</td>
+            <td>hindi</td>
+            <td>maths</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>hindi</td>
+        </tr>
+        <tr>
+            <th>wednesday</th>
+            <td>telugu</td>
+            <td>hindi</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>physics</td>
+        </tr>
+        <tr>
+            <th>thursday</th>
+            <td>telugu</td>
+            <td>hindi</td>
+            <td>maths</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>hindi</td>
+        </tr>
+        <tr>
+            <th>friday</th>
+            <td>telugu</td>
+            <td>hindi</td>
+            <td>english</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>physics</td>
+        </tr>
+        <tr>
+            <th>saturday</th>
+             <td>telugu</td>
+            <td>hindi</td>
+            <td>maths</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>social</td>
+            <td>hindi</td>
+        </tr>
+    </table>
+    <br />
+</body>
+</html>

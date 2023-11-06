@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>    
+        .f ul,.t ul,.menu ul{
+            margin:0;
+            padding:0;
+            
+        }
+         .f ul,.t ul,.menu ul {
+            display:flex;
+            list-style-type: none;
+            gap:20px;
+            background-color: rgb(165, 165, 165);
+            padding:15px;
+        }
+        .f,.t {
+            display:none;
+            position:absolute;
+            z-index:1;
+        
+        }
+        a {
+           text-decoration: none;
+           color:black;
+           padding:20px;
+           font-weight:bold;
+        }
+        .f ul,.t ul {
+            text-decoration: none;
+           padding: 10px;
+           margin: 15px;
+           color:black;
+           font-weight: bold;
+           display:block;
+        }
+        .active a,.f ul li a:hover,.t ul li a:hover,.menu ul li a:hover{
+            background-color: rgb(68, 68, 68);
+            color:aliceblue; 
+            transition: 0.25s;   
+        }    
+        .fli:hover .f,.tt:hover .t {
+            display:block;
+        }
+        .f ul li,.t ul li{
+            margin: 15px;
+        }
+        .f a,.t a{
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr><img src="./logo_img1.jpg" width="1200px"></tr>
+        <div class="width-100 top-header">
+            <div class="container">
+                <div class="width-100">
+                    <b class="news-list"> NEWS :</b>
+                    <marquee class="headquote">MY SCHOOL: Daniel memorial E.M.High school is a symbol of intelligence and atticate</marquee>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href='./homepage.html'>HOME</a></li>
+                <li class="fli"><a href='#'>FACILITIES</a>
+                <div class="f">
+                    <ul>
+                        <li><a href='./labs_fac.html'>LABS</a></li>
+                        <li><a href='./library_fac.html'>LIBRARY</a></li>
+                        <li><a href='./sports_fac.html'>SPORTS</a></li>
+                        <li><a href='./bus_fac.html'>BUS FACILITY</a></li>
+                        <li class="active"><a href='./hostels.html'>HOSTELS</a></li>
+                    </ul> 
+                </div></li>
+                <li class="tt"><a href='#'>TIME-TABLE</a>
+                   <div class="t">
+                    <ul>
+                        <li><a href='./timetable_classes.html'>CLASSES</a></li>
+                        <li><a href='./timetable_teachers.html'>TEACHERS</a></li>
+                    </ul>                                           
+                   </div>
+                </li>
+                <li><a href='./fee_structure.html'>FEE STRUCTURE</a></li>
+                <li><a href='./events.html'>EVENTS</a></li>
+                <li><a href='./teachers_info.html'>TEACHERS INFO</a></li>
+                <li><a href='./contact_us.html'>CONTACT US</a></li>
+            </ul>
+            </div>
+    <h1><u>HOSTELS</u></h1>
+    <p>Dainel memorial E.M.High school provides hostel facility to the students who are financially weak.The hostel rooms and washrooms are provided with very good sanitation facilities so that health of students living there will always be fine.</p>
+    <img src="./hostel_img1.jpg" style="height: 300px;width: 500px;">
+    <img src="./hostel_img2.jpg" style="height: 300px;width: 500px;">
+</body>
+</html>
